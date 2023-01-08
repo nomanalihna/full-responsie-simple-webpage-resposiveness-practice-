@@ -38,7 +38,7 @@ main{
     padding: 2% 6%;
 }
 .home_section{
-    height: 50vh;
+    height: auto;
     margin: 0px auto;
     text-align: center;
     display: flex;
@@ -75,12 +75,12 @@ main{
 
 /*___________Services Section_______________*/
 .services_section{
-    height: 55vh;
+    height: auto;
     margin: 1rem auto;
     text-align: center;
     display: flex;
     justify-content: space-between;
-    padding: 0px 50px;
+    padding: 50px 50px;
     border-bottom: 1px solid gray;;
 }
 .services{
@@ -116,7 +116,7 @@ main{
 
 /*_________About Us Section_______________*/
 .about_us_section{
-    height: 80vh;
+    height: auto;
     margin: 1rem auto;
     text-align: center;
     display: flex;
