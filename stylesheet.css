@@ -1,0 +1,331 @@
+*{
+    margin: 0px;
+    padding: 0px; 
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*___________ Styles for normal/full screen display___________*/
+
+/*___________Header_______________*/
+header{
+    background-color: rgb(67, 2, 65);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+header nav ul li{
+    padding: 25px 42px;
+}
+header nav ul li:hover{
+    background-color:rgb(112, 9, 108);
+    font-weight: bolder;
+    cursor: pointer;
+}
+.logo2{
+    color: rgb(172, 172, 172);
+}
+
+/*___________Home Section_______________*/
+main{
+    background-color: rgb(248, 207, 247);
+    padding: 2% 6%;
+}
+.home_section{
+    height: 50vh;
+    margin: 0px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 50px;
+    border-bottom: 1px solid gray;;
+}
+.home_section h1, .home_section p, .home_section button{
+    margin: 1rem;
+}
+.home_section h1{
+    color:rgb(67, 2, 65);
+    font-size: xx-large;
+}
+.home_section p{
+    padding: 0px 100px;
+}
+.home_section button{
+    width: 130px;
+    height: 40px;
+    background-color: rgb(67, 2, 65);
+    color: white;
+    font-weight: bold;
+    margin: 1rem auto;
+    border: none;
+}
+.home_section button:hover{
+    background-color:rgb(112, 9, 108);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+/*___________Services Section_______________*/
+.services_section{
+    height: 55vh;
+    margin: 1rem auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+    border-bottom: 1px solid gray;;
+}
+.services{
+    border: 2px solid rgb(67, 2, 65);
+    padding: 0.5rem;
+    padding-top: 1rem;
+    margin: auto 1rem;
+    border-radius: 10px;
+}
+.services_section h2{
+    color:rgb(67, 2, 65);
+    font-size: larger;
+}
+.services_section p{
+    padding:1.5rem 2rem;
+}
+.services_section button{
+    width: 130px;
+    height: 40px;
+    background-color: rgb(67, 2, 65);
+    color: white;
+    font-weight: bold;
+    margin: 1rem auto;
+    border: none;
+}
+.services_section button:hover{
+    background-color:rgb(112, 9, 108);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+
+/*_________About Us Section_______________*/
+.about_us_section{
+    height: 80vh;
+    margin: 1rem auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 30px;
+    border-bottom: 1px solid gray;;
+}
+.about_us{
+    border: 2px solid rgb(67, 2, 65);
+    padding: 0.5rem;
+    padding-top: 1rem;
+    margin: 1rem 1rem;
+    border-radius: 10px;
+    width: 30%;
+}
+.about_us_section h2{
+    color:rgb(67, 2, 65);
+    font-size: larger;
+}
+.about_us_section p{
+    padding:1.5rem 2rem;
+}
+
+/*_________FOOTER Section_______________*/
+footer{
+    background-color: rgb(67, 2, 65);
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-weight: lighter;
+}
+
+/*_________Style for minimum 900px width_____________*/
+
+@media screen and (min-width:900px) and (max-width: 1250px){
+
+header nav ul li{
+    padding: 20px 35px;
+    font-size: 14px;
+}
+.home_section{
+    height: auto;
+}
+
+.home_section h1{
+    font-size: x-large;
+}
+.home_section p{
+    font-size: 14px;
+}
+.home_section button{
+    font-weight: light;
+}
+
+.services_section{
+    padding: 1rem;
+    height: auto;
+}
+.services_section p{
+    padding: 0.3rem 1rem;
+}
+.about_us_section{
+    height: 85%;
+    padding: 1rem 10px;
+}
+.about_us{
+    padding: 0px 5px;
+    margin: 0.2rem 0.2rem 1rem 0.2rem;
+}
+footer p{
+    font-size: 12px;
+}
+}
+
+
+/*_________Style for minimum 750px and maximum 900px width_____________*/
+
+@media screen and (min-width:750px) and (max-width: 900px){
+    header{
+        flex-direction: column;
+    }
+    header nav ul{
+    }
+    .logo{
+        padding: 2rem;
+    }
+
+    header nav ul li{
+        display: block;
+        padding: 20px 35px;
+        font-size: 14px;
+    }
+    
+    .home_section{
+        height: auto;
+        padding: 0px 15px;
+    }
+    .home_section h1{
+        font-size: x-large;
+    }
+    .home_section p{
+        font-size: 14px;
+    }
+    .home_section button{
+        font-weight: light;
+    }
+    
+    .services_section{
+        padding: 1rem;
+        height: auto;
+    }
+    .services_section p{
+        font-size: 12px;
+        padding: 0.3rem 1rem;
+    }
+    .about_us_section{
+        height: 85%;
+        padding: 1rem 10px;
+    }
+    .about_us{
+        padding: 0px 5px;
+        margin: 0.2rem 0.2rem 1rem 0.2rem;
+        width: 45%;
+    }
+    .about_us p{
+        font-size: 12px;
+    }
+    footer p{
+        font-size: 12px;
+    }
+    }
+    
+
+    /*________ maximum width 750_________________*/
+
+    @media screen and (max-width: 750px){
+        .logo{
+            padding: 1.5rem;
+        }
+        header{
+            flex-direction: column;
+        }
+        header nav ul{
+            display: block;
+        }
+        header nav ul li{
+            font-size: 12px;
+            display: block;
+            width: 100%;
+            border-bottom: 1px solid rgb(151, 88, 151);
+            padding: 15px 25px;
+            text-align: center;
+        }
+        .home_section{
+            padding: 0px;
+        }
+        .home_section h1, .home_section p, .home_section button{
+            margin: 0.5rem auto;
+        }
+        .home_section h1{
+            font-size: 20px;
+        }
+        .home_section p{
+            font-size: 11px;
+            padding: 0px;
+        }
+        .home_section button{
+            font-size: 14px;
+        }
+
+        .services_section{
+            height: auto;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .services{
+            padding: 0px; 
+            margin: 1rem auto;
+        }
+        .services p{
+            font-size: 11px;
+        }
+        .services button{
+            font-size: 12px;
+        }
+
+        .about_us{
+            padding: 10px;
+            margin:1rem auto;
+            height: auto;
+        }
+        .about_us_section{
+            padding: 0px;
+        }
+        .about_us p{
+            font-size: 11px;
+            padding: 0px;
+            margin: 0px;
+        }
+        .about_us h2{
+            font-size: 13px;
+        }
+
+        .services_section, .about_us_section{
+            border-radius: 4px;
+        }
+        footer{
+            font-size: 11px;
+        }
+    }
+        
